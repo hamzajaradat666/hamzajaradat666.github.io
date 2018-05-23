@@ -150,13 +150,13 @@ a:hover,a:visited,a:link,a:active {
 }
 
 a.project-links {
-    color: darkred;
-    background-color:  #674a4a;
+    color: #e2e2e2;
+    background-color:  #6c6c6c;
     transition: 1s;
 }
 a.project-links:hover {
-    color: #4d1c1c;
-    background-color:  #dda6a6;
+    color: #e2e2e2;
+    background-color:  #a52323;
     transition: 1s;
 }
 
