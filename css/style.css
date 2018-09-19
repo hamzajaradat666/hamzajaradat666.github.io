@@ -1,180 +1,227 @@
 * {
+
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-
-}
-
-@media only screen and (max-width: 1000px){
+    color: gainsboro;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Neuton', serif;
     
-    .mybody{
-        overflow-x: hidden;
-    }
-}
-}
-
-
-a {
-
-    text-decoration: none;!important;
-    color: black;
-}
-
-a:hover,a:visited,a:link,a:active {
-    text-decoration: none!important;
-    color: black;
-}
-
-/*.mybody{
     
-    position: relative;
-}*/
+}
+html{
+    animation-name: animation2;
+    animation-duration: 4s;
+    animation-timing-function:ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+    
+}
+@keyframes animation2{
+    0%{background-color: black;}
+    100%{background-color:rgb(151, 150, 150);}
+}
+.colors{
+    animation-name: colors;
+    animation-duration: 8s;
+    animation-timing-function:linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes colors{
+    
+    0%{color: rgb(170, 0, 0);}
+    10%{color: rgb(0, 170, 0);}
+    20%{color: rgb(3, 0, 170);}
+    30%{color: rgb(136, 0, 170);}
+    40%{color: rgb(167, 170, 0);}
 
-.mynav {
+    
+}
+
+.mybody {
 
     position: fixed;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.99);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: aliceblue;
-    z-index: 99;
-    top: 0;
-    right: 0;
-    left: 0;
+    height: 100%;
+    background-image: url("./bg11.jpg");
+    
+    
 
-    transition: 1s;
+}
+.mybody{
+    /* Standard syntax */
+    animation-name: animation1;
+    animation-duration: 4s;
+    animation-timing-function:ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
+/* Standard syntax */
+@keyframes animation1 {
+    /* 0%  {width:10px; left:50%; top:50%;}
+    50% {width: 400px;left:50%; top:50%;}
+    100% {width: 100%; left:0%; top:0;} */
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.text-my {
+
+    color: rgb(226, 226, 226);
 
 }
 
+.text-my2 {
 
-.mynav:hover {
-    background-color: rgb(87, 87, 87);
-    transition: 1s;
+    color: rgba(9, 9, 19, 0.74);
 
 }
 
-.mybtn {
-    text-overflow: inherit;
-    background-color: ghostwhite;
-    width: 80px;
-    margin-left: 1%;
-    padding: 10px;
-    border-radius: 10px;
-    transition: .5s;
+.text-span {
+
+    color: rgba(207, 207, 207, 0.74);
 }
 
-.mybtn:hover {
+.myNavStyle {
 
-    color: rgb(161, 147, 201);
-    background-color: #000000;
-    transition: .5s;
+    background-color: rgba(21, 54, 65, 0.479);
+
 }
 
-.mybg-imgs {
+.hr-wrap {
+    
+    border-top: 1px solid rgb(167, 167, 167);
+    border-bo: 1px solid rgb(167, 167, 167);
+}
 
-    margin-top: 50px;
-    left: 0;
-    right: 0;
-    top: 0;
+.tech {
+
     position: absolute;
+    width: 96.7%;
+    height: 100%;
 
-
-}
-
-
-.imgs {
-
-    /*background-color: rgba(0, 118, 255, 0.45);*/
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    color: ghostwhite;
+    color: rgb(236, 236, 236);
+    opacity: 0;
+    transition: 0.5s;
 
 }
 
-@media only screen and (max-width: 1000px){
-    
-    .mybg-img {
-    width: 1%;
-    margin: 7% 25%;
-    border-radius: 100%;
-    border: 0px black solid;
-    transition: 2s;
-}
-    
-    
-    .imgs {
-
-    background-color: rgba(0, 0, 0, 0.0);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    color: black;
-
-}
-}
-
-.myprof-img {
-    width:15%;
-    margin: 2% 5%;
-    border-radius: 100%;
-    border: 10px black solid;
-    transition: 2s;
-}
-
-@media only screen and (max-width: 1000px){
-    
-    .myprof-img {
-    width:45%;
-    margin: 7% 25%;
-    border-radius: 100%;
-    border: 10px black solid;
-    transition: 2s;
-}
-}
-
-.myprof-img:hover{
-    
-    border: 10px #ffffff solid;
-    transition: 2s;    
-}
+.tech:hover {
 
 
-
-.tiny-info {
-     margin-left: 5%;
-}
-
-a.project-links {
-    color: #e2e2e2;
-    background-color:  #6c6c6c;
+    background: rgba(0, 0, 0, 0.726);
+    opacity: 1;
     transition: 1s;
+
 }
-a.project-links:hover {
-    color: #e2e2e2;
-    background-color:  #a52323;
+
+.profile {
+    opacity: 0.1;
+    position: absolute;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.459);
+    max-width: 600px;
+    max-height: 600px;
+    filter: blur(10px);
+    transition: 1s;
+
+
+
+}
+
+.profile:hover {
+    opacity: 1;
+    filter: blur(0px);
+    transition: 1s;
+
+}
+
+.firstBar .info {
+
+    opacity: 0.03;
+    transition: 1s;
+
+}
+
+.firstBar:hover .info {
+
+    opacity: 1;
+    transition: 1s;
+
+}
+
+.secBar {
+
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 600px;
+    min-height: 600px;
+    opacity: 0.03;
     transition: 1s;
 }
 
+.secBar:hover {
 
-.per-info {
-    background-color: rgba(0, 0, 0, 0.22);
-    font-family: 'Indie Flower', sans-serif;;
+    opacity: 1;
+    transition: 1s;
 }
 
-.project-table {
-    
-    margin-top:-0.9%;
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
 }
 
-@media only screen and (max-width: 1000px){
-    
-    .project-table {
-    
-    margin-top:35%;
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px rgb(0, 0, 0);
+    border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(102, 75, 151);
+    border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3b38e6;
+}
+
+.showImg {
+
+
+    border: 2px solid rgba(255, 255, 255, 0.062);
+    min-width: 70px;
+    border-radius: 20px;
+    z-index: -1;
+
 }
