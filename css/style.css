@@ -1,43 +1,65 @@
 * {
 
     box-sizing: border-box;
-    color: gainsboro;
     font-family: 'Courier New', Courier, monospace;
     font-family: 'Neuton', serif;
-    
-    
+
+
 }
-html{
+
+html {
     animation-name: animation2;
     animation-duration: 4s;
-    animation-timing-function:ease-out;
+    animation-timing-function: ease-out;
     animation-delay: 0s;
     animation-iteration-count: initial;
     animation-direction: normal;
-    
+
 }
-@keyframes animation2{
-    0%{background-color: black;}
-    100%{background-color:rgb(151, 150, 150);}
+
+@keyframes animation2 {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: rgb(151, 150, 150);
+    }
 }
-.colors{
+
+.colors {
     animation-name: colors;
     animation-duration: 8s;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    
-}
-@keyframes colors{
-    
-    0%{color: rgb(170, 0, 0);}
-    10%{color: rgb(0, 170, 0);}
-    20%{color: rgb(3, 0, 170);}
-    30%{color: rgb(136, 0, 170);}
-    40%{color: rgb(167, 170, 0);}
 
-    
+}
+
+@keyframes colors {
+
+    0% {
+        color: rgb(170, 0, 0);
+    }
+
+    10% {
+        color: rgb(0, 170, 0);
+    }
+
+    20% {
+        color: rgb(3, 0, 170);
+    }
+
+    30% {
+        color: rgb(136, 0, 170);
+    }
+
+    40% {
+        color: rgb(167, 170, 0);
+    }
+
+
 }
 
 .mybody {
@@ -45,15 +67,16 @@ html{
     position: fixed;
     height: 100%;
     background-image: url("./bg11.jpg");
-    
-    
+
+
 
 }
-.mybody{
+
+.mybody {
     /* Standard syntax */
     animation-name: animation1;
     animation-duration: 4s;
-    animation-timing-function:ease-out;
+    animation-timing-function: ease-out;
     animation-delay: 0s;
     animation-iteration-count: initial;
     animation-direction: normal;
@@ -61,13 +84,15 @@ html{
 
 /* Standard syntax */
 @keyframes animation1 {
+
     /* 0%  {width:10px; left:50%; top:50%;}
     50% {width: 400px;left:50%; top:50%;}
     100% {width: 100%; left:0%; top:0;} */
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -96,9 +121,9 @@ html{
 }
 
 .hr-wrap {
-    
+
     border-top: 1px solid rgb(167, 167, 167);
-    border-bo: 1px solid rgb(167, 167, 167);
+    border-bottom: 1px solid rgb(167, 167, 167);
 }
 
 .tech {
@@ -106,7 +131,6 @@ html{
     position: absolute;
     width: 96.7%;
     height: 100%;
-
     color: rgb(236, 236, 236);
     opacity: 0;
     transition: 0.5s;
@@ -125,20 +149,12 @@ html{
 .profile {
     opacity: 0.1;
     position: absolute;
+    width: 80%;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.459);
-    max-width: 600px;
-    max-height: 600px;
     filter: blur(10px);
     transition: 1s;
 
 
-
-}
-
-.profile:hover {
-    opacity: 1;
-    filter: blur(0px);
-    transition: 1s;
 
 }
 
@@ -156,13 +172,22 @@ html{
 
 }
 
+.firstBar:hover .parofile {
+
+    opacity: 1;
+    filter: blur(0px);
+    transition: 10s;
+
+
+}
+
 .secBar {
 
 
     overflow-y: scroll;
     overflow-x: hidden;
-    max-height: 600px;
-    min-height: 600px;
+    max-height: 90%;
+    scroll-behavior: smooth;
     opacity: 0.03;
     transition: 1s;
 }
@@ -170,6 +195,21 @@ html{
 .secBar:hover {
 
     opacity: 1;
+    transition: 1s;
+}
+
+.showImg {
+
+    color: #ffffff38;
+    border-radius: 20px;
+
+
+}
+
+.showImg:hover~.profile {
+
+    opacity: 1;
+    filter: blur(0px);
     transition: 1s;
 }
 
@@ -216,12 +256,56 @@ html{
     background: #3b38e6;
 }
 
-.showImg {
 
 
-    border: 2px solid rgba(255, 255, 255, 0.062);
-    min-width: 70px;
-    border-radius: 20px;
-    z-index: -1;
+.welcome {
+    position: absolute;
+    display: inline;
+    z-index: -9;
+    margin: 31% 4% 5% 5%;
+    color: whitesmoke;
+    font-family: Lobster;
+    font-size: 100px;
+}
 
+.loading {
+
+    position: absolute;
+    display: inline;
+    z-index: -9;
+    margin: 40% 8% 15% 6%;
+    color: whitesmoke;
+    font-family: Lobster;
+    font-size: 50px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    
+    .profile{
+        z-index: -1;
+    }
+
+    .showImg{
+
+        max-width: 70px;
+        z-index: 9999;
+    }
+
+    .showImg:hover~.profile {
+
+        opacity: 1;
+        filter: blur(0px);
+        transition: 1s;
+    }
+    
+    .mybody {
+        position: absolute;
+        background-image: url(bg11.jpg);
+        z-index: -1;
+        overflow-y: scroll;
+    }
+
+   
 }

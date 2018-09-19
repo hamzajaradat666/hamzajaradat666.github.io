@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>...</title>
-  <link rel="icon" href="http://example.com/favicon.png">
+  <title></title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Indie+Flower|Kaushan+Script|Nunito" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
@@ -18,55 +17,29 @@
 </head>
 
 <body>
-  <h1 style="position:absolute;
-    display: inline;
-    z-index:-9;
-    margin:40% 8% 15% 6%;
-    color: whitesmoke;
-    font-family:Lobster;
-    font-size: 50px;">Loading
-     <span class="colors">.</span>
-     <span class="colors">.</span>
-     <span class="colors">.</span>
-    </h1> 
+  <p class="loading">Loading
+    <span class="colors">.</span>
+    <span class="colors">.</span>
+    <span class="colors">.</span>
+  </p>
+  <p class="welcome">Welcome</p>
 
-  <h5 style="position:absolute;
-               display: inline;
-               z-index:-9;
-               margin:34% 4% 5% 5%;
-               color: whitesmoke;
-               font-family:Lobster;
-               font-size: 100px;">Welcome</h5>
   <div class="mybody">
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div class="container">
-      <h1>
-        <hr style="background-color: rgb(0, 0, 0); opacity:0.1">
-      </h1>
+      <hr style="background-color: rgb(0, 0, 0); opacity:0.1">
     </div>
+    
 
     <div class="row">
-      <div class="col-sm-1">
-
-      </div>
-      <div class="col-sm-4 firstBar">
-
-
-        <div class="profile" id="profile">
-          <img src="./css/me.jpg" width="100%" height="100%" class="me">
-
-        </div>
-
-
+      
+      <div class="col-sm-8 firstBar">
+        
         <div class="row  ml-1 info" id="info">
-          <div class="col-sm-12 mt-3">
-            <div class="">
+
+            
+          <div class="col-sm-11 mt-3">
+            <div>
               <h3 class="text-my">Hamza Jaradat</h3>
 
               <h5>
@@ -77,8 +50,17 @@
               </h5>
             </div>
           </div>
+          <div class="col-sm-1 showImg" id="showImg">
+              <p>Mirror</p>
+            </div>
+          <div class="profile" id="profile" title="profile">
 
-          <br>
+              <img src="./css/me.jpg" width="100%" height="100%" class="me">
+    
+            </div>
+          
+
+          
           <div class="col-sm-12">
             <h4 class="text-my">Languages</h4>
             <h5>
@@ -139,17 +121,12 @@
 
           </div>
 
-          <div class="col-sm-1 showImg" id="showImg">
-            <p>Mirror</p>
-          </div>
-
         </div>
 
-      </div>
-      <div class="col-sm-1">
 
       </div>
-      <div class="col-sm-6">
+      
+      <div class="col-sm-4">
 
         <div class="secBar">
 
@@ -240,18 +217,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"></script>
     <script>
-      setInterval(() => {
 
-        let welcome = document.getElementById('welcome')
-        welcome.onmouseover = function () {
-
-          welcome.style.opacity = 0
-
-        }
-
-
-
-      }, 1000)
     </script>
 
 
